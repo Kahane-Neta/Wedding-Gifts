@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>מתנה לנטע ואלון</title>
+<meta name="description" content="נשמח לראותכם! מתנות לחתונה של נטע ואלון דרך ביט ופייבוקס">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gveret+Levin&family=Heebo:wght@400;500;700;800&family=Secular+One&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --blue:#0a46b4;
+    --blue-soft:#2f5fae;
+    --orange:#e07000;
+    --card:rgba(255,255,255,.72);
+  }
+  *{box-sizing:border-box;margin:0}
+  html,body{min-height:100%}
+  body{
+    font-family:'Heebo',sans-serif;
+    color:var(--blue);
+    background:#1d2f5c url('bg.jpg') center/cover fixed no-repeat;
+    display:flex;align-items:center;justify-content:center;
+    padding:24px 16px;
+    min-height:100vh;
+  }
+  /* מסגרת כפולה כמו בהזמנה */
+  .frame{
+    width:100%;max-width:460px;
+    border:10px solid rgba(255,255,255,.85);
+    border-radius:34px;
+    padding:10px;
+  }
+  .card{
+    background:var(--card);
+    backdrop-filter:blur(3px);
+    -webkit-backdrop-filter:blur(3px);
+    border-radius:26px;
+    padding:36px 24px 30px;
+    text-align:center;
+  }
+  .kicker{font-family:'Secular One',sans-serif;font-size:1.05rem;letter-spacing:.02em}
+  .names{
+    font-family:'Gveret Levin',cursive;
+    font-size:4.4rem;line-height:1;margin:10px 0 6px;
+    color:var(--blue);
+  }
+  .date{
+    font-family:'Secular One',sans-serif;
+    font-size:2.4rem;color:var(--orange);letter-spacing:.03em;
+    direction:ltr;margin:6px 0 26px;
+  }
+  .lead{font-size:1.05rem;line-height:1.6;margin-bottom:22px;font-weight:500}
+  .gifts{display:grid;gap:14px}
+  .person{
+    background:rgba(255,255,255,.65);
+    border-radius:20px;padding:16px 14px 18px;
+  }
+  .person h2{font-family:'Secular One',sans-serif;font-size:1.35rem;margin-bottom:12px}
+  .btns{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .btn{
+    display:flex;align-items:center;justify-content:center;gap:8px;
+    padding:13px 8px;border-radius:999px;
+    text-decoration:none;font-weight:800;font-size:1.1rem;
+    color:#fff;background:var(--blue);
+    transition:transform .15s, box-shadow .15s, background .15s;
+    box-shadow:0 4px 12px rgba(10,70,180,.28);
+    direction:ltr;
+  }
+  .btn:hover,.btn:focus-visible{transform:translateY(-2px);background:#083a96;outline:none}
+  .btn.paybox{background:var(--orange);box-shadow:0 4px 12px rgba(224,112,0,.3)}
+  .btn.paybox:hover,.btn.paybox:focus-visible{background:#c46200}
+  .btn svg{width:20px;height:20px;flex:none}
+  .bless{
+    font-family:'Gveret Levin',cursive;color:var(--orange);
+    font-size:2rem;margin-top:26px;
+  }
+  .fam{display:flex;justify-content:space-between;margin-top:14px;font-weight:700;font-size:1.05rem;line-height:1.5}
+  @media (max-width:380px){
+    .names{font-size:3.6rem}.date{font-size:2rem}
+    .btns{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+  <main class="frame">
+    <section class="card">
+      <p class="kicker">תודה שאתם חלק מהשמחה שלנו</p>
+      <h1 class="names">נטע ואלון</h1>
+      <p class="date">3.11.2026</p>
+
+      <p class="lead">מי שמעוניין להעניק מתנה, אפשר לעשות זאת בקלות דרך ביט או פייבוקס</p>
+
+      <div class="gifts">
+        <div class="person">
+          <h2>מתנה לנטע</h2>
+          <div class="btns">
+            <a class="btn" id="neta-bit" href="#" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>bit
+            </a>
+            <a class="btn paybox" id="neta-paybox" href="#" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 2 3 7v10l9 5 9-5V7z"/><path d="M3 7l9 5 9-5M12 12v10"/></svg>PayBox
+            </a>
+          </div>
+        </div>
+
+        <div class="person">
+          <h2>מתנה לאלון</h2>
+          <div class="btns">
+            <a class="btn" id="alon-bit" href="#" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>bit
+            </a>
+            <a class="btn paybox" id="alon-paybox" href="#" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 2 3 7v10l9 5 9-5V7z"/><path d="M3 7l9 5 9-5M12 12v10"/></svg>PayBox
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <p class="bless">נשמח לראותכם</p>
+      <div class="fam"><span>משפחת<br>כהנא</span><span>משפחת<br>אלמוג-נוי</span></div>
+    </section>
+  </main>
+
+<script>
+  const LINKS = {
+    "neta-bit":    "https://www.bitpay.co.il/app/me/60381816-B069-1746-44D8-5D1A4F982C424AE9",
+    "neta-paybox": "https://3ydbh.app.link/OBgN97nGXUb",
+    "alon-bit":    "https://www.bitpay.co.il/app/me/5FDD72BE-8459-804F-01DC-2B53259E67A42AFD",
+    "alon-paybox": "https://links.payboxapp.com/EsnZ0rjIXUb"
+  };
+  for (const [id, url] of Object.entries(LINKS)) {
+    const a = document.getElementById(id);
+    if (url.startsWith("http")) a.href = url;
+    else a.addEventListener("click", e => e.preventDefault());
+  }
+</script>
+</body>
+</html>
